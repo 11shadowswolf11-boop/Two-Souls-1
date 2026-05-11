@@ -36,9 +36,11 @@ export default function Home() {
       </nav>
 
       <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
-        <Image src="/books/complete-series.png" alt="The Two Souls Series" fill priority className="object-cover opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight/30 via-midnight/65 to-midnight" />
-        <motion.div initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.6 }} className="relative z-10 mx-auto max-w-6xl text-center">
+        <img
+  src="/books/complete-series.png"
+  alt="The Two Souls Series"
+  className="absolute inset-0 h-full w-full object-cover opacity-30"
+/>
           <p className="font-sans text-xs uppercase tracking-[.55em] text-gold">The Two Souls Series</p>
           <h1 className="mt-8 font-serif text-6xl leading-[.86] gold-text md:text-9xl">A Love<br/>Without End</h1>
           <p className="mx-auto mt-8 max-w-2xl font-sans text-lg leading-8 text-pearl/78 md:text-xl">Six souls. One journey. An ocean of longing, recognition, surrender, and becoming.</p>
