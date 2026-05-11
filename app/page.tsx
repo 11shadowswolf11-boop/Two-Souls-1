@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Headphones, Mail, Music2, Sparkles, Users, Film, BookOpen } from 'lucide-react'
 
 const books = [
-  { n: 'Book One', title: 'The First Breath', tagline: 'The moment the soul remembers.', image: '/books/book-1.jpg', desc: 'A first recognition. A breath before language. The beginning of a pull neither soul asked for, but neither could forget.' },
-  { n: 'Book Two', title: 'What I Could Not Stop', tagline: 'Some pulls are stronger than will.', image: '/books/book-2.jpd', desc: 'Desire becomes gravity. Silence becomes a room they both keep entering, even when they know they should turn away.' },
-  { n: 'Book Three', title: 'Quietly Undone', tagline: 'The self I knew is slipping away.', image: '/books/book-3.jpg', desc: 'The breaking is not loud. It is the soft dismantling of the version of her who survived by staying small.' },
-  { n: 'Book Four', title: 'Surrendering', tagline: 'We were never apart. Only afraid to see.', image: '/books/book-4.jpg', desc: 'Two souls stand at the edge of what they have denied, learning that surrender is not weakness. It is truth.' },
-  { n: 'Book Five', title: 'She Rises', tagline: 'She remembered who she was.', image: '/books/book-5.jpg', desc: 'Fire returns to the body. The woman who once waited for permission becomes the flame that names herself.' },
-  { n: 'Book Six', title: 'Without End', tagline: 'Love does not end. It becomes everything.', image: '/books/book-6.jpg', desc: 'The final tide. The last becoming. A love that moves beyond possession into peace, memory, and forever.' },
+  { n: 'Book One', title: 'The First Breath', tagline: 'The moment the soul remembers.', image: '/books/book1.jpg', desc: 'A first recognition. A breath before language. The beginning of a pull neither soul asked for, but neither could forget.' },
+  { n: 'Book Two', title: 'What I Could Not Stop', tagline: 'Some pulls are stronger than will.', image: '/books/book2.jpd', desc: 'Desire becomes gravity. Silence becomes a room they both keep entering, even when they know they should turn away.' },
+  { n: 'Book Three', title: 'Quietly Undone', tagline: 'The self I knew is slipping away.', image: '/books/book3.jpg', desc: 'The breaking is not loud. It is the soft dismantling of the version of her who survived by staying small.' },
+  { n: 'Book Four', title: 'Surrendering', tagline: 'We were never apart. Only afraid to see.', image: '/books/book4.jpg', desc: 'Two souls stand at the edge of what they have denied, learning that surrender is not weakness. It is truth.' },
+  { n: 'Book Five', title: 'She Rises', tagline: 'She remembered who she was.', image: '/books/book5.jpg', desc: 'Fire returns to the body. The woman who once waited for permission becomes the flame that names herself.' },
+  { n: 'Book Six', title: 'Without End', tagline: 'Love does not end. It becomes everything.', image: '/books/book6.jpg', desc: 'The final tide. The last becoming. A love that moves beyond possession into peace, memory, and forever.' },
 ]
 
 function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
