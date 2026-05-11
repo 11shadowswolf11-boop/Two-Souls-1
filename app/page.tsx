@@ -36,7 +36,7 @@ export default function Home() {
 
       <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
         <img
-  src="/books/complete-series.png"
+  src="/books/complete-series.jpg"
   alt="The Two Souls Series"
   className="absolute inset-0 h-full w-full object-cover opacity-30"
 />
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section id="series" className="relative px-6 py-28 md:py-36">
         <SectionTitle eyebrow="About the Series" title="The soul remembers before the mind understands." text="The Two Souls Series is an emotional, ocean-soaked journey of recognition, longing, surrender, becoming, and love that does not end. It follows the invisible pull between souls who find each other across distance, timing, fear, and fate." />
-        <Reveal delay={.15}><div className="mx-auto mt-16 max-w-5xl overflow-hidden rounded-[2rem] glass shadow-glow"><Image src="/books/complete-series.png" width={1200} height={1800} alt="Complete series cover" className="h-[520px] w-full object-cover opacity-90" /></div></Reveal>
+        <Reveal delay={.15}><div className="mx-auto mt-16 max-w-5xl overflow-hidden rounded-[2rem] glass shadow-glow"><Image src="/books/completeseries.jpg" width={1200} height={1800} alt="Complete series cover" className="h-[520px] w-full object-cover opacity-90" /></div></Reveal>
       </section>
 
       <section id="books" className="px-6 py-28">
