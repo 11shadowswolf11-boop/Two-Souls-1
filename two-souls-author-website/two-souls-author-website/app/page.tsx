@@ -41,7 +41,7 @@ export default function Home() {
         <motion.div initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.6 }} className="relative z-10 mx-auto max-w-6xl text-center">
           <p className="font-sans text-xs uppercase tracking-[.55em] text-gold">The Two Souls Series</p>
           <h1 className="mt-8 font-serif text-6xl leading-[.86] gold-text md:text-9xl">A Love<br/>Without End</h1>
-          <p className="mx-auto mt-8 max-w-2xl font-sans text-lg leading-8 text-pearl/78 md:text-xl">Six souls. One journey. An ocean of longing, recognition, surrender, and becoming.</p>
+          <p className="mx-auto mt-8 max-w-2xl font-sans text-lg leading-8 text-pearl/78 md:text-xl">Six Books. One journey. An ocean of longing, recognition, surrender, and becoming.</p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <a href="#books" className="group rounded-full bg-gold px-7 py-4 font-sans text-sm uppercase tracking-[.22em] text-midnight transition hover:bg-pearl">Explore the Books <ArrowRight className="ml-2 inline h-4 w-4 transition group-hover:translate-x-1" /></a>
             <a href="#series" className="rounded-full luxury-border px-7 py-4 font-sans text-sm uppercase tracking-[.22em] text-pearl transition hover:bg-white/10">Enter the World</a>
