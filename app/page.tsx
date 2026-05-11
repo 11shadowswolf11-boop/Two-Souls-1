@@ -2,15 +2,15 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ArrowRight, Headphones, Mail, Music2, Sparkles, Users, Film, BookOpen } from 'lucide-react'
+import { ArrowRight, Headphones, Mail, Music2, Sparkles, Users, Film } from 'lucide-react'
 
 const books = [
-  { n: 'Book One', title: 'The First Breath', tagline: 'The moment the soul remembers.', image: '/brand/Book1.jpg', desc: 'A first recognition. A breath before language. The beginning of a pull neither soul asked for, but neither could forget.' },
-  { n: 'Book Two', title: 'What I Could Not Stop', tagline: 'Some pulls are stronger than will.', image: '/brand/Book2.jpg', desc: 'Desire becomes gravity. Silence becomes a room they both keep entering, even when they know they should turn away.' },
-  { n: 'Book Three', title: 'Quietly Undone', tagline: 'The self I knew is slipping away.', image: '/brand/Book3.jpg', desc: 'The breaking is not loud. It is the soft dismantling of the version of her who survived by staying small.' },
-  { n: 'Book Four', title: 'Surrendering', tagline: 'We were never apart. Only afraid to see.', image: '/brand/Book4.jpg', desc: 'Two souls stand at the edge of what they have denied, learning that surrender is not weakness. It is truth.' },
-  { n: 'Book Five', title: 'She Rises', tagline: 'She remembered who she was.', image: '/brand/Book5.jpg', desc: 'Fire returns to the body. The woman who once waited for permission becomes the flame that names herself.' },
-  { n: 'Book Six', title: 'Without End', tagline: 'Love does not end. It becomes everything.', image: '/brand/Book6.jpg', desc: 'The final tide. The last becoming. A love that moves beyond possession into peace, memory, and forever.' },
+  { n: 'Book One', title: 'The First Breath', tagline: 'The moment the soul remembers.', image: '/books/book1.jpg', desc: 'A first recognition. A breath before language. The beginning of a pull neither soul asked for, but neither could forget.' },
+  { n: 'Book Two', title: 'What I Could Not Stop', tagline: 'Some pulls are stronger than will.', image: '/books/book2.jpg', desc: 'Desire becomes gravity. Silence becomes a room they both keep entering, even when they know they should turn away.' },
+  { n: 'Book Three', title: 'Quietly Undone', tagline: 'The self I knew is slipping away.', image: '/books/book3.jpg', desc: 'The breaking is not loud. It is the soft dismantling of the version of her who survived by staying small.' },
+  { n: 'Book Four', title: 'Surrendering', tagline: 'We were never apart. Only afraid to see.', image: '/books/book4.jpg', desc: 'Two souls stand at the edge of what they have denied, learning that surrender is not weakness. It is truth.' },
+  { n: 'Book Five', title: 'She Rises', tagline: 'She remembered who she was.', image: '/books/book5.jpg', desc: 'Fire returns to the body. The woman who once waited for permission becomes the flame that names herself.' },
+  { n: 'Book Six', title: 'Without End', tagline: 'Love does not end. It becomes everything.', image: '/books/book6.jpg', desc: 'The final tide. The last becoming. A love that moves beyond possession into peace, memory, and forever.' },
 ]
 
 function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -36,7 +36,7 @@ export default function Home() {
       </nav>
 
       <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
-        <img src="/brand/complete-series.jpg" alt="The Two Souls Series" className="absolute inset-0 h-full w-full object-cover opacity-30" />
+        <img src="/books/complete-series.jpg" alt="The Two Souls Series" className="absolute inset-0 h-full w-full object-cover opacity-30" />
         <motion.div initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.6 }} className="relative mx-auto max-w-5xl text-center">
           <p className="font-sans text-xs uppercase tracking-[.55em] text-gold">The Two Souls Series</p>
           <h1 className="mt-8 font-serif text-6xl leading-[.86] gold-text md:text-9xl">A Love<br/>Without End</h1>
@@ -50,7 +50,7 @@ export default function Home() {
 
       <section id="series" className="relative px-6 py-28 md:py-36">
         <SectionTitle eyebrow="About the Series" title="The soul remembers before the mind understands." text="The Two Souls Series is an emotional, ocean-soaked journey of recognition, longing, surrender, becoming, and love that does not end. It follows the invisible pull between souls who find each other across distance, timing, fear, and fate." />
-        <Reveal delay={.15}><div className="mx-auto mt-16 max-w-5xl overflow-hidden rounded-[2rem] glass shadow-glow"><Image src="/brand/complete-series.jpg" width={1200} height={1800} alt="Complete series cover" className="h-[520px] w-full object-cover opacity-90" /></div></Reveal>
+        <Reveal delay={.15}><div className="mx-auto mt-16 max-w-5xl overflow-hidden rounded-[2rem] glass shadow-glow"><Image src="/books/complete-series.jpg" width={1200} height={1800} alt="Complete series cover" className="h-[520px] w-full object-cover opacity-90" /></div></Reveal>
       </section>
 
       <section id="books" className="px-6 py-28">
