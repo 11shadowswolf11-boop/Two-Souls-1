@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight, Headphones, Mail, Music2, Sparkles, Users, Film, BookOpen } from 'lucide-react'
 
