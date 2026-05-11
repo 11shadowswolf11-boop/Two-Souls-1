@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight, Headphones, Mail, Music2, Sparkles, Users, Film, BookOpen } from 'lucide-react'
 
@@ -35,11 +36,8 @@ export default function Home() {
       </nav>
 
       <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
-        <img
-  src="/books/complete-series.jpg"
-  alt="The Two Souls Series"
-  className="absolute inset-0 h-full w-full object-cover opacity-30"
-/>
+        <img src="/books/complete-series.jpg" alt="The Two Souls Series" className="absolute inset-0 h-full w-full object-cover opacity-30" />
+        <motion.div initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.6 }} className="relative mx-auto max-w-5xl text-center">
           <p className="font-sans text-xs uppercase tracking-[.55em] text-gold">The Two Souls Series</p>
           <h1 className="mt-8 font-serif text-6xl leading-[.86] gold-text md:text-9xl">A Love<br/>Without End</h1>
           <p className="mx-auto mt-8 max-w-2xl font-sans text-lg leading-8 text-pearl/78 md:text-xl">Six Books. One journey. An ocean of longing, recognition, surrender, and becoming.</p>
@@ -52,7 +50,7 @@ export default function Home() {
 
       <section id="series" className="relative px-6 py-28 md:py-36">
         <SectionTitle eyebrow="About the Series" title="The soul remembers before the mind understands." text="The Two Souls Series is an emotional, ocean-soaked journey of recognition, longing, surrender, becoming, and love that does not end. It follows the invisible pull between souls who find each other across distance, timing, fear, and fate." />
-        <Reveal delay={.15}><div className="mx-auto mt-16 max-w-5xl overflow-hidden rounded-[2rem] glass shadow-glow"><Image src="/books/completeseries.jpg" width={1200} height={1800} alt="Complete series cover" className="h-[520px] w-full object-cover opacity-90" /></div></Reveal>
+        <Reveal delay={.15}><div className="mx-auto mt-16 max-w-5xl overflow-hidden rounded-[2rem] glass shadow-glow"><Image src="/books/complete-series.jpg" width={1200} height={1800} alt="Complete series cover" className="h-[520px] w-full object-cover opacity-90" /></div></Reveal>
       </section>
 
       <section id="books" className="px-6 py-28">
@@ -71,7 +69,7 @@ export default function Home() {
       <section className="px-6 py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
           <Reveal><div><p className="font-sans text-xs uppercase tracking-[.42em] text-gold/80">About Shadow Wolf</p><h2 className="mt-5 font-serif text-5xl gold-text md:text-7xl">Written from the edge of memory.</h2><p className="mt-7 font-sans text-lg leading-9 text-pearl/70">Shadow Wolf writes from the place where memory, longing, ocean, and soul recognition meet. Her work is emotional, poetic, cinematic, and deeply human.</p></div></Reveal>
-          <Reveal delay={.1}><div className="rounded-[2rem] glass p-12 text-center"><Sparkles className="mx-auto h-10 w-10 text-gold"/><p className="mt-8 font-serif text-3xl leading-snug text-pearl">“For the readers who have felt something they could never explain.”</p></div></Reveal>
+          <Reveal delay={.1}><div className="rounded-[2rem] glass p-12 text-center"><Sparkles className="mx-auto h-10 w-10 text-gold"/><p className="mt-8 font-serif text-3xl leading-snug text-pearl">"For the readers who have felt something they could never explain."</p></div></Reveal>
         </div>
       </section>
 
@@ -85,7 +83,7 @@ export default function Home() {
       </section>
 
       <section id="newsletter" className="px-6 py-28">
-        <div className="mx-auto max-w-3xl text-center"><Mail className="mx-auto h-10 w-10 text-gold"/><h2 className="mt-6 font-serif text-5xl gold-text md:text-7xl">Receive the First Whisper</h2><p className="mt-5 font-sans text-pearl/65">Join the list for book news, music releases, and the first openings into the world.</p><form className="mt-10 grid gap-4 md:grid-cols-[1fr_1fr_auto]"><input placeholder="Name" className="rounded-full border border-gold/20 bg-white/5 px-6 py-4 font-sans outline-none placeholder:text-pearl/35 focus:border-gold"/><input placeholder="Email" className="rounded-full border border-gold/20 bg-white/5 px-6 py-4 font-sans outline-none placeholder:text-pearl/35 focus:border-gold"/><button className="rounded-full bg-gold px-8 py-4 font-sans text-xs uppercase tracking-[.22em] text-midnight">Join</button></form></div>
+        <div className="mx-auto max-w-3xl text-center"><Mail className="mx-auto h-10 w-10 text-gold"/><h2 className="mt-6 font-serif text-5xl gold-text md:text-7xl">Receive the First Whisper</h2><p className="mt-5 font-sans text-pearl/65">Join the list for book news, music releases, and the first openings into the world.</p><div className="mt-10 grid gap-4 md:grid-cols-[1fr_1fr_auto]"><input placeholder="Name" className="rounded-full border border-gold/20 bg-white/5 px-6 py-4 font-sans outline-none placeholder:text-pearl/35 focus:border-gold"/><input placeholder="Email" className="rounded-full border border-gold/20 bg-white/5 px-6 py-4 font-sans outline-none placeholder:text-pearl/35 focus:border-gold"/><button className="rounded-full bg-gold px-8 py-4 font-sans text-xs uppercase tracking-[.22em] text-midnight">Join</button></div></div>
       </section>
 
       <footer className="border-t border-gold/10 px-6 py-12 text-center"><p className="font-serif text-2xl tracking-[.4em] text-pearl">SHADOW WOLF</p><div className="mx-auto my-6 h-px max-w-md bg-gradient-to-r from-transparent via-gold/60 to-transparent"/><p className="font-sans text-xs uppercase tracking-[.25em] text-pearl/45">Books | Music | Audiobooks | Community | Newsletter</p><p className="mt-6 font-sans text-xs text-pearl/35">© 2026 Shadow Wolf. All rights reserved.</p></footer>
