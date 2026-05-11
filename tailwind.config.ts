@@ -7,7 +7,7 @@ const config: Config = {
       colors: {
         midnight: '#020812',
         navy: '#071527',
-        gold: '#d8ae6a',
+        gold: '#d4b06a',
         amberglow: '#f2c074',
         pearl: '#f7ead5'
       },
